@@ -47,6 +47,42 @@ body {
   font-style: italic;
 }
 
+.button-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.3rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 0.5rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brighteness(100%);
+}
+
+button:active {
+  transform: translateY(0.5rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+  color: #38a1f8;
+}
+
+.fa-twitter {
+  font-size: 1.8rem;
+}
+
 @media screen and (max-width: 62.5em) {
   .quote-container {
     margin: auto 1rem;
