@@ -26,7 +26,7 @@ function removeLoader() {
 
 // Get Quote
 const getQuote = async () => {
-  showLoader();
+  // showLoader();
 
   try {
     const response = await fetch(
@@ -49,7 +49,7 @@ const getQuote = async () => {
     quoteText.innerText = data.quote;
     removeLoader();
   } catch (e) {
-    getQuote();
+    // getQuote();
   }
 };
 
